@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📚&lt;/text&gt;&lt;/svg&gt;">
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>conda操作&nbsp;|&nbsp;ᐕ)⁾⁾ DoubleTree</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="conda操作">
+  
+  
+  <style>
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📚&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</nav>
+  <header class="Header">
+    
+    <div class="Header__Spacer Header__Spacer--NoCover">
+    </div>
+    
+    <h1 class="Header__Title">conda操作</h1>
+    
+      <div class="DateTagBar">
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/CS.html">CS</a>
+          </span>
+        
+      </div>
+    
+  </header>
+  <article id="https://www.notion.so/fb5d9401d3e846e498953f21cd9c6699" class="PageRoot"><h3 id="https://www.notion.so/175481beacc7468a9c64710df525a898" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/175481beacc7468a9c64710df525a898"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">1.查看所有环境</span></span></h3><pre id="https://www.notion.so/6457f4a6b3bf47b09fe882aa4089feb0" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda env list
+
+conda info -e</span></span></span></code></pre><h3 id="https://www.notion.so/57a9abe0ab5640a5bd1eac444ea9fd4c" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/57a9abe0ab5640a5bd1eac444ea9fd4c"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">2.创建新的环境</span></span></h3><pre id="https://www.notion.so/1881fe9ea37f4e1aa2bb1fb00bfe7740" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda create -n env_name python=3.8</span></span></span></code></pre><h3 id="https://www.notion.so/60b24b53f77d476db79bc71bf6f44f26" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/60b24b53f77d476db79bc71bf6f44f26"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">3.激活环境</span></span></h3><pre id="https://www.notion.so/b8896c5a01564af6b7b264e4e5e74e74" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda activate env_name</span></span></span></code></pre><h3 id="https://www.notion.so/443f72e7897a4e36bb5b175ecc3c8bb8" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/443f72e7897a4e36bb5b175ecc3c8bb8"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">4.退出环境</span></span></h3><pre id="https://www.notion.so/d52daeaaec8c405b86cdc0764cda84ae" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda deactivate</span></span></span></code></pre><h3 id="https://www.notion.so/2ffbff9595e44e6cabc8ec6e8c271d7b" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/2ffbff9595e44e6cabc8ec6e8c271d7b"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">5.删除环境</span></span></h3><pre id="https://www.notion.so/e33b64314507434a854c5c41f9a73a81" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda remove -n env_name -all</span></span></span></code></pre><h3 id="https://www.notion.so/1940d3f49fdd43ddb52c5a41e23b0cde" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/1940d3f49fdd43ddb52c5a41e23b0cde"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">6.安装包</span></span></h3><pre id="https://www.notion.so/377651c46ac540a3a83a20874d0c20a6" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda install pkg_name -n env_name
+conda uninstall pkg_name -n env_name</span></span></span></code></pre><h3 id="https://www.notion.so/daecf1e84582439f8a64bce6d370112e" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/daecf1e84582439f8a64bce6d370112e"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">7.升级包</span></span></h3><pre id="https://www.notion.so/8757b943fbb34d04b64963d3534dc78b" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda update pkg_name</span></span></span></code></pre><h3 id="https://www.notion.so/ef7cb737ff4e4862951895becde4de86" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/ef7cb737ff4e4862951895becde4de86"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">8.搜索包</span></span></h3><pre id="https://www.notion.so/0209f39a881f4a198a472a498fc76105" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda search pkg_name</span></span></span></code></pre><h3 id="https://www.notion.so/626252e95bb747148091b9a93add7eec" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/626252e95bb747148091b9a93add7eec"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">9.指定镜像源</span></span></h3><pre id="https://www.notion.so/f277f90c90df494db45549694f9978cc" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>pip install -c conda-forge pkg_name</span></span></span></code></pre><h3 id="https://www.notion.so/3a0afabe93ca4a8e84fe12a77c9762b6" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/3a0afabe93ca4a8e84fe12a77c9762b6"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">10.更改镜像源（清华）</span></span></h3><pre id="https://www.notion.so/16c0890399984c44b43946f969404d7b" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span></span></span></code></pre><h3 id="https://www.notion.so/0739f3f98bc046c89e44ff891cff3056" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/0739f3f98bc046c89e44ff891cff3056"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">11.列出安装的包</span></span></h3><pre id="https://www.notion.so/4358f19096da49b3bac69bd651796097" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda list</span></span></span></code></pre><h3 id="https://www.notion.so/2d849a36a75b4a7eac435e1dab175611" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/2d849a36a75b4a7eac435e1dab175611"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">12.导出环境到yml文件</span></span></h3><pre id="https://www.notion.so/eaad41d6718745a69d70e993e8a523f3" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda env export &gt; environment.yml</span></span></span></code></pre><h3 id="https://www.notion.so/b00dfca2158f4b2991d1ec78fbb54286" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/b00dfca2158f4b2991d1ec78fbb54286"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">13.利用yml文件配置环境</span></span></h3><pre id="https://www.notion.so/75011ab309db4fc7b189a3017c67779e" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>conda env create -f environment.yml</span></span></span></code></pre></article>
+  <footer class="Footer">
+  <div>&copy; ᐕ)⁾⁾ DoubleTree 2023</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
+</body>
+
+</html>
